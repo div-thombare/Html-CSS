@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure the content is centered vertically on the viewport */
+    margin: 0; /* Remove default body margin */
+    font-family: sans-serif; /* Optional: Set a default font */
+}
+
+#myImage {
+    position: relative;
+    width: 200px;
+    height: auto;
+    transition: left 0.5s, opacity 0.5s, filter 0.5s;
+    margin-bottom: 20px; /* Space between image and text */
+}
+
+#hiddenText {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+    text-align: center; /* Center the text horizontally */
+    margin-bottom:20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px;
+}
+
+.button {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #f0f0f0;
+}
